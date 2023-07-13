@@ -40,10 +40,11 @@ public class Belonging {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Belonging belonging = (Belonging) o;
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Belonging belonging = (Belonging) obj;
         return Objects.equals(id, belonging.id);
     }
 
